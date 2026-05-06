@@ -1,0 +1,26 @@
+{
+  "name": "product-detection",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "blockchain/api/server.js",
+  "scripts": {
+    "blockchain:compile": "node blockchain/scripts/compile-local.js",
+    "blockchain:node": "node blockchain/scripts/run-hardhat-node.js",
+    "blockchain:deploy": "node blockchain/scripts/deploy-local.js",
+    "blockchain:api": "node blockchain/api/server.js",
+    "blockchain:start": "node blockchain/scripts/start-blockchain-stack.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "ProductSecure with local real blockchain integration",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "ethers": "^6.16.0",
+    "express": "^5.2.1",
+    "hardhat": "^3.2.0",
+    "solc": "^0.8.34"
+  }
+}
